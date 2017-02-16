@@ -1,0 +1,29 @@
+<div class="card">
+  <h3 class="card-header">{{pageTitle}}</h3>
+  <div class="card-block">
+    
+    <form [formGroup]="userForm" (ngSubmit)="saveUser(userForm.value)" autocomplete="off" novalidate>
+      <div class="form-group">
+        <label for="id">ID</label>
+        <input formControlName="id" id="id" type="number" class="form-control" placeholder="id" />
+      </div>
+      <div class="form-group">
+        <label for="userName">User Name</label>
+        <input formControlName="userName" id="userName" type="text" class="form-control" placeholder="user name" />
+      </div>
+      <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input formControlName="firstName" id="firstName" type="text" class="form-control" placeholder="first name" />
+      </div>
+      <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input formControlName="lastName" id="lastName" type="text" class="form-control" placeholder="last name" />
+      </div>
+    
+      <button type="button" class="btn btn-primary" (click)="goBack()">Back</button>
+      <button type="submit" [disabled]="userForm.invalid" class="btn btn-primary pull-right">Save</button>
+      </form>
+      
+      
+  </div>
+</div>
