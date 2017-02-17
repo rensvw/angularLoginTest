@@ -6,8 +6,6 @@ import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/do';
 import 'rxjs/add/operator/catch';
 
-
-
 @Injectable()
 export class UserService {
 
@@ -63,7 +61,6 @@ export class UserService {
     }
 
     editUser(user): void {
-
       let index = this.users.findIndex(x => x.id === user.id);
       this.users.splice(index,1,user);
     }

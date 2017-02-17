@@ -23,6 +23,16 @@ export class AuthService {
     }
     return false;
 
+}
+
+    saveProfile(user): void {
+      const newUser = {
+        id: user.id,
+        userName: user.userName,
+        firstName: user.firstName,
+        lastName: user.lastName
+      };
+      //this.users.push(newUser);
     }
 
     isAuthenticated() {

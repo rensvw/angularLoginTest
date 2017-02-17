@@ -5,6 +5,7 @@ import { ProfileRoutingModule } from './profile-routing.module';
 
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
+import { SignupComponent } from './signup/signup.component';
 
 @NgModule({
     imports: [ProfileRoutingModule,
@@ -12,7 +13,7 @@ import { ProfileComponent } from './profile/profile.component';
         FormsModule,
         ReactiveFormsModule],
     exports: [],
-    declarations: [LoginComponent, ProfileComponent],
+    declarations: [LoginComponent, ProfileComponent, SignupComponent],
     providers: [],
 })
 export class ProfileModule { }
